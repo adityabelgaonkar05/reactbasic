@@ -1,6 +1,17 @@
-let a = document.getElementById("content");
-let toadd = document.createElement("div")
+let page = (
+    <nav>
+        <h1>Navigation!</h1>
+        <ul>
+            <li>Pricing</li>
 
-toadd.textContent = "I appended this";
+            <li>About</li>
 
-a.appendChild(toadd);
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+
+ReactDOM.render(
+    page,
+    document.getElementById("content")
+)
